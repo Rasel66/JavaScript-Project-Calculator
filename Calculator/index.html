@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap" rel="styleshee">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculatorBody">
+        <table>
+            <tr>
+                <div class="brand">
+                    <h2><i>Casio <small style="font-size: 25px;">Fx-10</small></i></h2>
+                </div>
+            </tr>
+            <tr style="border-bottom: 10px solid black;">
+                <td colspan="4"><input type="text" id="MyResult"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value = "AC" style="background-color:#C70039" onclick = "DeleteMe()"></td>
+                <td><input type="button" value = "(" style="background-color: #FF60AB;" onclick = "calculator('(')"></td>
+                <td><input type="button" value = ")" style="background-color: #FF60AB;" onclick = "calculator(')')"></td>
+                <td><input type="button" value = "%" style="background-color: #F75431;" onclick = "calculator('%')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value = "7" onclick = "calculator('7')"></td>
+                <td><input type="button" value = "8" onclick = "calculator('8')"></td>
+                <td><input type="button" value = "9" onclick = "calculator('9')"></td>
+                <td><input type="button" value = "+" style="background-color: #F75431;" onclick = "calculator('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value = "4" onclick = "calculator('4')"></td>
+                <td><input type="button" value = "5" onclick = "calculator('5')"></td>
+                <td><input type="button" value = "6" onclick = "calculator('6')"></td>
+                <td><input type="button" value = "-" style="background-color: #F75431;" onclick = "calculator('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value = "1" onclick = "calculator('1')"></td>
+                <td><input type="button" value = "2" onclick = "calculator('2')"></td>
+                <td><input type="button" value = "3" onclick = "calculator('3')"></td>
+                <td><input type="button" value = "*" style="background-color: #F75431;" onclick = "calculator('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value = "0" onclick = "calculator('0')"></td>
+                <td><input type="button" value = "." onclick = "calculator('.')"></td>
+                <td><input type="button" value = "=" onclick = "Answer()"></td>
+                <td><input type="button" value = "/" style="background-color: #F75431;" onclick = "calculator('/')"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="../Calculator/script.js"></script>
+</body>
+</html>
